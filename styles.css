@@ -9,11 +9,23 @@
   --transbluepurple: #51557e6b;
   --purple: #816797;
   --transpurple: #81679746;
-  --white: #D6D5A8
+  --white: #D6D5A8;
+  --smalltext: 12px;
+  --regulartext: 16px;
+  --largetext: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--transbluepurple);
+  border: 2px solid var(--darkblue);
+  border-radius: 100vw;
 }
 
 body {
-  font-size: large;
   background-color: var(--darkblue);
   color: var(--white);
 }
@@ -28,6 +40,7 @@ body {
 
 .introduction {
   padding-left: 15%;
+  font-size: var(--largetext);
 }
 
 .about {
@@ -39,6 +52,10 @@ body {
   justify-content: center;
 }
 
+.aboutlabel {
+  margin-bottom: 0;
+  font-size: var(--regulartext);
+}
 .decorline {
   margin-top: 0;
   width: 100%;
@@ -55,7 +72,7 @@ body {
 }
 
 .lineends {
-  font-size: small;
+  font-size: var(--smalltext);
 }
 
 .aboutsection {
@@ -90,6 +107,7 @@ body {
   border: 1px solid var(--transbluepurple);
   animation: animate 20s linear infinite;
   bottom: -150px;
+  font-size: var(--smalltext);
 }
 #amazon {
   left: 60%;
@@ -159,6 +177,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.projectlabel {
+  font-size: var(--regulartext);
+}
 .projectline {
   border-color: var(--white);
 }
@@ -184,15 +206,16 @@ body {
 }
 .projectdate {
   text-align: right;
-  font-size: small;
+  font-size: var(--smalltext);
 }
 .projectdesc {
-  font-size: medium;
+  font-size: var(--smalltext);
 }
 
 .otherprojects {
   display: flex;
   justify-content: center;
+  font-size: var(--regulartext);
 }
 
 .contact {
@@ -207,6 +230,7 @@ body {
   padding-bottom: 1%;
   color: var(--white);
   text-decoration: none;
+  font-size: var(--regulartext);
 }
 .socials {
   margin: 0;
