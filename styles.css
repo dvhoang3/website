@@ -1,7 +1,21 @@
 * {
   margin: 1%;
   padding: 0;
+}
+
+:root {
+  --darkblue: #1B2430;
+  --bluepurple: #51557e;
+  --transbluepurple: #51557e6b;
+  --purple: #816797;
+  --transpurple: #81679746;
+  --white: #D6D5A8
+}
+
+body {
   font-size: large;
+  background-color: var(--darkblue);
+  color: var(--white);
 }
 
 .landing {
@@ -9,6 +23,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  border: 2px solid var(--white);
 }
 
 .introduction {
@@ -25,6 +40,7 @@
 }
 
 .decorline {
+  margin-top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -35,6 +51,7 @@
   width: 50%;
   height: 0%;
   margin: 10px;
+  border-color: var(--white);
 }
 
 .lineends {
@@ -55,7 +72,7 @@
   height: 100%;
   margin: 10px;
   border-radius: 25px;
-  border: 1px solid rgb(110, 110, 110);
+  border: 1px solid var(--white);
 }
 .box-area {
   position: relative;
@@ -69,8 +86,8 @@
   position: absolute;
   display: block;
   list-style: none;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.205);
+  background: var(--transpurple);
+  border: 1px solid var(--transbluepurple);
   animation: animate 20s linear infinite;
   bottom: -150px;
 }
@@ -141,8 +158,9 @@
   height: 60vh;
   display: flex;
   flex-direction: column;
-
-  background-color: rgb(255, 254, 248);
+}
+.projectline {
+  border-color: var(--white);
 }
 
 .projectlist {
@@ -150,7 +168,6 @@
   flex-direction: row;
   list-style: none;
 }
-
 .proj {
   width: 100%;
   margin: 10px;
@@ -159,11 +176,11 @@
 }
 .shortprojectimage {
   height: 100px;
-  border: 1px solid black;
+  border: 1px solid var(--white);
 }
 .longprojectimage {
   height: 175px;
-  border: 1px solid black;
+  border: 1px solid var(--white);
 }
 .projectdate {
   text-align: right;
@@ -188,7 +205,7 @@
 .email {
   margin: 0;
   padding-bottom: 1%;
-  color: black;
+  color: var(--white);
   text-decoration: none;
 }
 .socials {
@@ -198,4 +215,8 @@
 }
 ul.socials li {
   margin: 5%;
+}
+
+.svglogo {
+  fill: var(--purple);
 }
