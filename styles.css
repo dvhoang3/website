@@ -1,5 +1,5 @@
 * {
-  margin: 1%;
+  margin: 0;
   padding: 0;
 }
 
@@ -10,6 +10,7 @@
   --purple: #816797;
   --transpurple: #81679746;
   --white: #D6D5A8;
+  --transwhite: #d6d5a880;
   --smalltext: 12px;
   --regulartext: 16px;
   --largetext: 20px;
@@ -28,9 +29,24 @@
 body {
   background-color: var(--darkblue);
   color: var(--white);
+  cursor: none;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E9D5CA;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  pointer-events: none;
+  background-color: transparent;
+}
+.cursorhover {
+  background-color: var(--transwhite);
 }
 
 .landing {
+  margin: 2%;
   width: auto;
   height: 100vh;
   display: flex;
@@ -224,6 +240,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.link {
+  cursor: none;
 }
 .email {
   margin: 0;
